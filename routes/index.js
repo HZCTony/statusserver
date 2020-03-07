@@ -16,7 +16,7 @@ router.post('/', function(req, res, next) {
   ls.stdout.on('data', (data) => {
     let currentNetworkInput = Number(`${data}`);
     console.log(currentNetworkInput);
-    res.json({'Input': currentNetworkInput});
+    res.json({'input': currentNetworkInput});
     });
     
     ls.stderr.on('data', (data) => {
